@@ -172,6 +172,7 @@ BITCOIN_CORE_H = \
   spork.h \
   sporkdb.h \
   stakeinput.h \
+  stealth.h \
   streams.h \
   sync.h \
   threadsafety.h \
@@ -408,6 +409,7 @@ libbitcoin_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   script/script_error.cpp \
+  stealth.cpp \
   spork.cpp \
   sporkdb.cpp \
   $(BITCOIN_CORE_H)

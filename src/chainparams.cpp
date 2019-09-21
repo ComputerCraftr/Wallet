@@ -189,6 +189,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75); // X
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 85); // b
+        base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1, 40); //smY
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 127); // t
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x73).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
@@ -312,6 +313,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet beetlecoin addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet beetlecoin script addresses start with '8' or '9'
+        base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1, 42); // Testnet stealth addresses start with 'vJm'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet beetlecoin BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
